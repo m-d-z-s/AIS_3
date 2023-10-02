@@ -68,6 +68,7 @@ public class HelloController {
                 getA9_2, getA8_1, getA8_2, getA7, getA10, getA11, getA12_1, getA12_2);
         String res = earthquake.resultOfDegree();
         if (res == "") res = "error";
+
         textResult.setText(res);
 
     }
