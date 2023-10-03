@@ -1,4 +1,4 @@
-module me.mdzs.ais_3 {
+module me.mdzs.ais3 {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,7 +10,12 @@ module me.mdzs.ais_3 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires annotations;
 
-    opens me.mdzs.ais_3 to javafx.fxml;
-    exports me.mdzs.ais_3;
+    opens me.mdzs.ais3 to javafx.fxml;
+    exports me.mdzs.ais3;
+    exports me.mdzs.ais3.controllers;
+    opens me.mdzs.ais3.controllers to javafx.fxml;
+    exports me.mdzs.ais3.domain;
+    opens me.mdzs.ais3.domain to javafx.fxml;
 }
